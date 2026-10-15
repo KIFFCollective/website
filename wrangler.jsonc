@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kiff-website",
+  "compatibility_date": "2024-08-19",
+  "assets": {
+    "directory": "./"
+  },
+  "routes": [
+    { "pattern": "kiff.website", "custom_domain": true },
+    { "pattern": "www.kiff.website", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": false
+    },
+    "traces": {
+      "enabled": true
+    }
+  }
+}

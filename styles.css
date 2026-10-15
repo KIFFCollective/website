@@ -1,0 +1,138 @@
+:root {
+    --bg-color: #fafafa;
+    --text-color: #1a1a1a;
+    --text-muted: #555555;
+    --border-color: #e5e5e5;
+    --accent-color: #000000;
+    --accent-hover: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+[data-design-id="status-badge"] {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    color: var(--text-muted);
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+}
+
+.cta {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cta h2 {
+    margin-top: 0;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.875rem 1.5rem;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.cta a:hover {
+    background-color: var(--accent-hover);
+    color: #ffffff;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
